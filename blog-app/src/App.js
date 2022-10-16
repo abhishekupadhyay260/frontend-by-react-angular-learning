@@ -1,9 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Button } from 'reactstrap';
 
 function App() {
   return (
     <div className="App">
+
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -17,7 +20,10 @@ function App() {
         >
           Learn React
         </a>
-      </header>
+        <Button>Click here</Button>
+      </header> 
+      {/* above commented iteams are actually created by default while creating react project. we don't need them, hence i commented it. */}
+
     </div>
   );
 }
